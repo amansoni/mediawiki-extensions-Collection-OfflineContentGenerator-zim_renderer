@@ -64,7 +64,7 @@ GPLv2
 
 [1]: https://travis-ci.org/cscott/mw-ocg-zimwriter.svg
 [2]: https://travis-ci.org/cscott/mw-ocg-zimwriter
-[3]: https://david-dm.org/cscott/mw-ocg-zimwriter.svg
-[4]: https://david-dm.org/cscott/mw-ocg-zimwriter
-[5]: https://david-dm.org/cscott/mw-ocg-zimwriter/dev-status.svg
-[6]: https://david-dm.org/cscott/mw-ocg-zimwriter#info=devDependencies
+[3]: https://david-dm.org/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-zim_renderer.svg
+[4]: https://david-dm.org/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-zim_renderer
+[5]: https://david-dm.org/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-zim_renderer/dev-status.svg
+[6]: https://david-dm.org/wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-zim_renderer#info=devDependencies

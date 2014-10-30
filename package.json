@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "cscott/mw-ocg-zimwriter"
+    "url": "wikimedia/mediawiki-extensions-Collection-OfflineContentGenerator-zim_renderer"
   },
   "keywords": [
     "wikitext",
@@ -16,6 +16,9 @@
     "openzim"
   ],
   "license": "GPLv2",
+  "engines": {
+    "node": ">=0.8"
+  },
   "dependencies": {
     "commander": "~2.2.0",
     "domino": "~1.0.17",
