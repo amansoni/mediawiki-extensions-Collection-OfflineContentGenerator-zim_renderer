@@ -15,7 +15,7 @@
     "zim",
     "openzim"
   ],
-  "license": "GPLv2",
+  "license": "GPL-2.0",
   "engines": {
     "node": ">=0.8"
   },
