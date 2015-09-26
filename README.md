@@ -65,7 +65,7 @@ GPLv2
 
 [ZIM]: http://en.wikipedia.org/wiki/ZIM_(file_format)
 
-[NPM1]: https://nodei.co/npm/mw-ocg-zimwriter.svg
+[NPM1]: https://nodei.co/npm/mw-ocg-zimwriter.png
 [NPM2]: https://nodei.co/npm/mw-ocg-zimwriter/
 
 [1]: https://travis-ci.org/cscott/mw-ocg-zimwriter.svg
