@@ -1,5 +1,5 @@
 /* global describe, it */
-"use strict";
+'use strict';
 require('core-js/shim');
 var Promise = require('prfun');
 
@@ -9,8 +9,8 @@ var path = require('path');
 
 var zimwriter = require('../');
 
-// ensure that we don't crash on any of our sample inputs
-describe("Basic crash test", function() {
+// Ensure that we don't crash on any of our sample inputs.
+describe('Basic crash test', function() {
 	['tao.zip', 'us.zip'].forEach(function(bundle) {
 		describe(bundle, function() {
 			it('should compile to ZIM', function() {
@@ -19,7 +19,7 @@ describe("Basic crash test", function() {
 				return zimwriter.convert({
 					bundle: filename,
 					output: filename + '.zim',
-					log: function() { /* suppress logging */ }
+					log: function() { /* Suppress logging. */ },
 				}).then(function(statusCode) {
 					assert.equal(statusCode, 0);
 				}).finally(function() {
