@@ -1,10 +1,29 @@
+sudo: false
 language: node_js
+addons:
+  apt:
+    packages:
+    - zip
+    - unzip
+    - liblzma-dev
+    - libmagic-dev
 node_js:
   - "4.1"
   - "0.10"
   - "0.8"
 before_install:
+ - echo Installing zimwriterfs.
+ - pushd $HOME
+ - git clone https://gerrit.wikimedia.org/r/p/openzim
+ - pushd openzim/zimlib
+ - ./autogen.sh && ./configure --prefix=$HOME && make && make install
+ - popd
+ - pushd openzim/zimwriterfs
+ - ./autogen.sh && ./configure --prefix=$HOME CXXFLAGS="-I$HOME/include -L$HOME/lib" CFLAGS="-I$HOME/include -L$HOME/lib" && make && make install
+ - popd
+ - echo Cleaning up. && /bin/rm -rf openzim
+ - popd
+ - which zimwriterfs
+ - zimwriterfs --help
  - NODE_VERSION=$(node -e 'console.log(process.version.replace(/[.][0-9]+$/, ""))')
  - if [ "v0.8" = "$NODE_VERSION" ]; then npm install -g npm@1.4.28 && npm install -g npm ; fi
- - sudo apt-get update -qq
- - sudo apt-get install -qq unzip
