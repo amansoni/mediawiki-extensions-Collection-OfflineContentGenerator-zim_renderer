@@ -12,6 +12,7 @@
 		"try",
 		"catch"
 	],
+	"requireEarlyReturn": false,
 	"validateIndentation": "\t",
 	"maximumLineLength": null,
 	"disallowMultipleVarDecl": null,

@@ -1,7 +1,7 @@
 /* global describe, it */
 'use strict';
 require('core-js/shim');
-var Promise = require('prfun');
+var Promise = require('../lib/promise.js');
 
 var assert = require('assert');
 var fs = require('fs');
